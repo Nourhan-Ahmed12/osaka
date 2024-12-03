@@ -1,0 +1,105 @@
+:root {
+    --main-color: #ff206e;
+}
+body {
+    font-family: "Bebas Neue", serif;
+}
+header.home {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+header div.h-content a {
+    color: var(--main-color);
+}
+header div.h-content h1 {
+    font-size: 4.5rem;
+}
+header div.social-icons ul li a div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.navbar-nav .nav-link.active {
+    color: var(--main-color);
+}
+section.portfolio header h2, 
+section.services header h2,
+section.testimonial header h2{
+    font-size: 7rem;
+    color: rgba(211,211,211,0.5);
+    position: relative;
+}
+section.portfolio header h2::after, 
+section.services header h2::after,
+section.testimonial header h2::after{
+    content: attr(data-head);
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+section.services header h2::after {
+    color: white;
+}
+section.services div.anchor-icon {
+    width: 40px;
+    height: 40px;
+}
+section.services div.anchor-icon i {
+    transition: color 0.4s ease;
+}
+section.services div.anchor-icon:hover i {
+    color: var(--main-color) !important;
+}
+div.services-content h3 {
+    position: relative;
+}
+div.services-content h3::after {
+    content: "";
+    width: 20px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+    transition: width 0.4s ease;
+}
+div.services-content:hover h3::after {
+    width: 50px;
+}
+section.services {
+    background-image: url("../images/dark_dot.jpg");
+}
+.carousel-item img {
+    transform: translatey(50%);
+}
+.carousel-indicators [data-bs-target] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.carousel-indicators button.btn1 {
+    background-image: url("../images/1-1.jpg");
+    background-size: cover;
+}
+.carousel-indicators button.btn2 {
+    background-image: url("../images/1-2.jpg");
+    background-size: cover;
+}
+.carousel-indicators button.btn3 {
+    background-image: url("../images/1-3.jpg");
+    background-size: cover;
+}
+.carousel-indicators button.btn4 {
+    background-image: url("../images/1-4.jpg");
+    background-size: cover;
+}
